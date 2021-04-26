@@ -1,0 +1,22 @@
+#include<stdio.h>
+float power(float,float);
+int main()
+{ 
+    float n,m,pow;
+    printf("enter the number \n");
+    scanf("%f%f",&n,&m);
+    pow=power(n,m);
+    printf("%f to the power %f is = %f",n,m,pow);
+    return 0;
+}
+float power(float x,float y)
+{
+    int i;
+    int p=1;
+    for(i=1;i<=y;i++)
+        p=x*x;
+        
+    
+    return (p);
+    
+}
